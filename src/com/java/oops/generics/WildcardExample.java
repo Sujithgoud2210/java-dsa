@@ -1,12 +1,16 @@
 package com.java.oops.generics;
 
-public class CustomGenArrayList<T>{
+public class WildcardExample<T extends Number> {
     private Object[] data;
     private static int DEFAULT_SIZE = 10;
-    private int size = 0; // also working as index value
+    private int size = 0; // also working as inde value
 
-    public CustomGenArrayList() {
+    public WildcardExample() {
         data = new Object[DEFAULT_SIZE];
+    }
+
+    public void getList(List<? extends Number> list) {
+        // do something
     }
 
     public void add(T num) {
@@ -57,7 +61,7 @@ public class CustomGenArrayList<T>{
 
     public static void main(String[] args) {
 //        ArrayList list = new ArrayList();
-        CustomGenArrayList list = new CustomGenArrayList();
+        WildcardExample list = new WildcardExample();
 //        list.add(3);
 //        list.add(5);
 //        list.add(9);
@@ -72,7 +76,7 @@ public class CustomGenArrayList<T>{
 //        list2.add("dfghj");
 
 
-        CustomGenArrayList<Integer> list3 = new CustomGenArrayList<>();
+        WildcardExample<Integer> list3 = new WildcardExample<>();
         for (int i = 0; i < 14; i++) {
             list3.add(2 * i);
         }

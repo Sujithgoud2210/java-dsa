@@ -1,5 +1,5 @@
 package com.java.oops.generics;
 
-public class GenericInterface {
+public class GenericInterface<T> {
     void display(T value);
 }
