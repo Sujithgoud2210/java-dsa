@@ -1,4 +1,4 @@
 package com.java.oops.properties.inheritance;
 
-public class BoxColor {
+public class BoxColor extends BoxWeight{
 }
