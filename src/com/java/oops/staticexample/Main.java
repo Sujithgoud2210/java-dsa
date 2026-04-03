@@ -8,12 +8,15 @@ public class Main {
 //        System.out.println(human1);
         System.out.println(Human.population);
         greet();
-        greeting();
+        Main obj=new Main();
+        obj.greet(); 
     }
     static void greet(){
         System.out.println("hello");
+
     }
     void greet(String msg){
         System.out.println("greeting");
+        greet();
     }
 }
