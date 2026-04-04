@@ -1,7 +1,7 @@
 package com.java.oops.staticexample;
 
 public class InnerClasses {
-    class Test{
+   static class Test{
        String name;
 
        public Test(String name) {
